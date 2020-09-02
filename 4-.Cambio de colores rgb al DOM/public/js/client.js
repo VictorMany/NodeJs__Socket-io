@@ -1,7 +1,5 @@
 var socket = io('http://localhost:3000')
 
-
-
 var lblRojo = document.getElementById('lblRojo');
 var lblVerde = document.getElementById('lblVerde');
 var lblAzul = document.getElementById('lblAzul');
@@ -44,6 +42,4 @@ socket.on('actualizacion', function (data) {
     sldAzul.value = data.azul;
 
     body.style = "background-color: rgb(" + sldRojo.value + "," + sldVerde.value + "," + sldAzul.value + ")";
-
-
 })
